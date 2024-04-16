@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Card</title>
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- FONT AWESOME LINK -->
+    <script src="https://kit.fontawesome.com/a7a0b13f8d.js" crossorigin="anonymous"></script>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- CARD CODES -->
+    <div class="container">
+        <div class="card">
+            <div class="photo">
+                <div class="circle"></div>
+                    <img src="9d18d108-180d-4474-a123-b744fa523c19.jpg">
+                </div>
+                <div class="info">
+                    <h1 class="title">Scarlet Medina </h1>
+                    <h4 class="title">IT STUDENT</h4>
+                    <div class="social">
+                        <i class="fab fa-facebook fa-2x social-icon"></i>
+                        <i class="fab fa-github fa-2x social-icon"></i>
+                        <i class="fab fa-instagram fa-2x social-icon"></i>
+                        <i class="fab fa-twitter fa-2x social-icon"></i>
+                    </div>
+                    <div class="profile">
+                        <button type="button" class="btn btn-outside-dark btn-dark">View Profile</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+
+    <!-- JAVASCRIPT CODE -->
+    <script src="index.js"></script>
+    <!-- BOOTSTRAP JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;900&display=swap');
+
+:root {
+    --card-font: 'Marcellus', cursive;
+    --body-font: 'Work Sans', sans-serif;
+    --bg-color: #000000;
+    --bg-image: url(https://us.v-cdn.net/6032830/uploads/K7ABTSVPNCDJ/category-banner-orange-grid.png) ;
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--bg-color);
+    font-family: var(--body-font);
+    background: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: var(--card-font);
+}
+
+
+/* card container code */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 25rem;
+    padding: 0rem 3rem;
+    border-radius: 30px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(284deg, rgba(247, 117, 117, 0.499) 100%, rgba(247, 117, 117, 0.499) 100%);
+    /* for js animation */
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+/* card image code */
+.photo {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo img {
+    width: 12rem;
+    border-radius: 50%;
+    z-index: 1;
+    margin: 2rem 0;
+    transform: all 0.75s ease-out;
+}
+
+.circle {
+    width: 15rem;
+    height: 3rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(284deg, rgba(248, 160, 160, 0.499) 100%, rgba(247, 117, 117, 0.499)100%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+    top: 215px;
+}
+
+.profile {
+    margin-top: 2rem;
+    transform: all 0.75s ease-out;
+}
+
+.profile button {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/* card information code */
+.info {
+    text-align: center;
+}
+
+.info h1, h4 {
+    padding: 0 0 1rem 0;
+    transform: all 0.75s ease-out;
+}
+
+.social-icon {
+    padding: 0 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+</style>
+</html>
+
